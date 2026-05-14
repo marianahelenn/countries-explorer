@@ -89,7 +89,9 @@ npm install
 
 npm run dev
 
- Sobre o Projeto:
+ ---
+
+ ## Sobre o Projeto
 
 Projeto desenvolvido como parte dos meus estudos em desenvolvimento front-end, com foco em prática real com React e TypeScript.
 
