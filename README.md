@@ -10,9 +10,7 @@ O objetivo principal do projeto foi praticar conceitos fundamentais de front-end
 
 ## Link do projeto
 
-(Adicione aqui o link do deploy, se tiver)
-
-Ex: https://countries-explorer-zeta.vercel.app
+Link: https://countries-explorer-zeta.vercel.app
 
 ---
 
