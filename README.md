@@ -1,73 +1,96 @@
-# React + TypeScript + Vite
+# Countries Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação web desenvolvida com React e TypeScript que consome a API pública de países.
 
-Currently, two official plugins are available:
+A ideia foi criar uma interface onde o usuário consegue explorar países do mundo, buscar por nome e visualizar informações detalhadas de cada país em uma página separada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O objetivo principal do projeto foi praticar conceitos fundamentais de front-end, como consumo de API, componentização, tipagem com TypeScript e navegação entre páginas.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Link do projeto
 
-## Expanding the ESLint configuration
+(Adicione aqui o link do deploy, se tiver)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Ex: https://seu-projeto.vercel.app
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Listagem de todos os países disponíveis na API
+- Busca de países por nome
+- Filtro por região (Europa, África, Ásia, Américas e Oceania)
+- Página de detalhes para cada país
+- Exibição de informações detalhadas, como:
+  - Bandeira
+  - Nome oficial
+  - População
+  - Capital
+  - Região e sub-região
+  - Idiomas
+  - Moedas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tecnologias utilizadas
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React
+- TypeScript
+- Vite
+- React Router DOM
+- Fetch API / Axios
+- CSS
+
+---
+
+## API utilizada
+
+Este projeto consome dados da API pública Rest Countries:
+
+https://restcountries.com/
+
+---
+
+## Estrutura do projeto
+
+  src/
+├── components/ # Componentes reutilizáveis da interface
+├── pages/ # Páginas (Home, Details, etc)
+├── services/ # Conexão com a API
+├── styles/ # Estilização
+├── types/ # Tipagem com TypeScript
+└── App.tsx # Configuração de rotas
+
+
+---
+
+## O que eu aprendi com este projeto
+
+Durante o desenvolvimento, pratiquei:
+
+- Consumo de API REST na prática
+- Organização de projetos em React
+- Uso de React Router para navegação entre páginas
+- Tipagem com TypeScript
+- Estruturação de componentes reutilizáveis
+- Tratamento de dados vindos de API
+
+---
+
+## Como rodar o projeto
+
+```bash
+git clone https://github.com/marianahelenn/countries-explorer.git
+
+cd countries-explorer
+
+npm install
+
+npm run dev
+
+ Sobre o Projeto:
+
+Projeto desenvolvido como parte dos meus estudos em desenvolvimento front-end, com foco em prática real com React e TypeScript.
+
+GitHub: (https://github.com/marianahelenn)
