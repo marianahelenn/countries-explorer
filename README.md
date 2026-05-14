@@ -53,14 +53,13 @@ https://restcountries.com/
 ---
 
 ## Estrutura do projeto
-
-  src/
-├── components/ # Componentes reutilizáveis da interface
-├── pages/ # Páginas (Home, Details, etc)
-├── services/ # Conexão com a API
-├── styles/ # Estilização
-├── types/ # Tipagem com TypeScript
-└── App.tsx # Configuração de rotas
+src/
+├── components/
+├── pages/
+├── services/
+├── styles/
+├── types/
+└── App.tsx
 
 
 ---
@@ -89,10 +88,11 @@ npm install
 
 npm run dev
 
- ---
 
- ## Sobre o Projeto
+---
+```
+## Sobre o projeto
 
-Projeto desenvolvido como parte dos meus estudos em desenvolvimento front-end, com foco em prática real com React e TypeScript.
+Projeto desenvolvido como parte dos meus estudos em desenvolvimento front-end, com foco em prática e evolução em React e TypeScript.
 
-GitHub: (https://github.com/marianahelenn)
+GitHub: ((https://github.com/marianahelenn))
